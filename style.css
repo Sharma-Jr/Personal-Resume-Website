@@ -1,0 +1,317 @@
+
+/* 1. BASIC PAGE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f3ef;
+    color: #202b2b;
+    line-height: 1.6;
+}
+
+
+/* 2. NAVIGATION BAR */
+
+header {
+    background-color: #172d2d;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    color: #d6b77a;
+    font-size: 27px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #d6b77a;
+}
+
+
+/* 3. INTRODUCTION SECTION */
+
+.hero {
+    background-color: #172d2d;
+    color: white;
+    padding: 105px 10%;
+    text-align: left;
+}
+
+.small-heading {
+    color: #d6b77a;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #d6b77a;
+}
+
+.hero h2 {
+    font-size: 21px;
+    font-weight: normal;
+    color: #d9e0dc;
+}
+
+.hero-description {
+    max-width: 620px;
+    color: #c5d0ca;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    display: inline-block;
+    background-color: #d6b77a;
+    color: #172d2d;
+    padding: 11px 22px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.main-button:hover {
+    background-color: #e7c990;
+}
+
+
+/* 4. COMMON SECTION STYLING */
+
+.section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+.section-label {
+    color: #9a7840;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.section-title {
+    color: #172d2d;
+    font-size: 32px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+
+/* 5. ID SELECTORS */
+
+/* About section */
+
+#about {
+    padding-top: 75px;
+}
+
+/* Education section */
+
+#education {
+    padding-top: 65px;
+}
+
+/* Skills section */
+
+#skills {
+    padding-top: 65px;
+}
+
+/* Contact section */
+
+#contact {
+    padding-top: 65px;
+    border-top: 1px solid #dedbd2;
+}
+
+
+/* 6. ABOUT SECTION */
+
+.about-card {
+    background-color: white;
+    padding: 25px 30px;
+    border-left: 4px solid #d6b77a;
+    border-radius: 5px;
+}
+
+.about-card p {
+    margin-top: 0;
+}
+
+
+/* 7. EDUCATION SECTION */
+
+.education-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    min-height: 225px;
+    background-color: white;
+    padding: 24px;
+    margin: 0 1% 15px 0;
+    border-radius: 5px;
+    border: 1px solid #e5e2da;
+}
+
+.education-card h3 {
+    color: #172d2d;
+    margin-bottom: 5px;
+}
+
+.card-date {
+    color: #9a7840;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.institution {
+    color: #687675;
+    font-weight: bold;
+}
+
+
+/* 8. SKILLS SECTION */
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    width: 50%;
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #e5e2da;
+}
+
+.skill-card h3 {
+    color: #172d2d;
+    margin-top: 0;
+}
+
+.skill-card p {
+    display: inline-block;
+    background-color: #edf0eb;
+    color: #344747;
+    padding: 7px 12px;
+    margin: 5px 5px 5px 0;
+    border-radius: 3px;
+}
+
+
+/* 9. CONTACT SECTION */
+
+.email-link {
+    display: inline-block;
+    color: #80602e;
+    font-weight: bold;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+
+/* 10. FOOTER */
+
+footer {
+    background-color: #172d2d;
+    color: #c5d0ca;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+
+/* 11. RESPONSIVE DESIGN */
+
+@media screen and (max-width: 700px) {
+
+    .navbar {
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 12px;
+    }
+
+    .nav-links li {
+        margin: 5px 8px;
+    }
+
+    .hero {
+        padding: 75px 7%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .section {
+        width: 88%;
+        padding: 55px 0;
+    }
+
+    .education-card {
+        display: block;
+        width: 100%;
+    }
+
+    .skills-container {
+        display: block;
+    }
+
+    .skill-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
